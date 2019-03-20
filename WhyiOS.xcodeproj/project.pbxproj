@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F769D3F82242CFA800950A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769D3F72242CFA800950A25 /* AppDelegate.swift */; };
-		F769D3FA2242CFA800950A25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769D3F92242CFA800950A25 /* ViewController.swift */; };
-		F769D3FD2242CFA800950A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769D3FB2242CFA800950A25 /* Main.storyboard */; };
 		F769D3FF2242CFAA00950A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F769D3FE2242CFAA00950A25 /* Assets.xcassets */; };
-		F769D4022242CFAA00950A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769D4002242CFAA00950A25 /* LaunchScreen.storyboard */; };
+		F769D4102242D09800950A25 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769D40F2242D09800950A25 /* Post.swift */; };
+		F769D4122242D14800950A25 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769D4112242D14800950A25 /* PostController.swift */; };
+		F769D4142242D15F00950A25 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769D4132242D15F00950A25 /* PostListTableViewController.swift */; };
+		F769D4182242D1E500950A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769D4172242D1E500950A25 /* Main.storyboard */; };
+		F769D41A2242D6FA00950A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769D4192242D6FA00950A25 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F769D3F42242CFA800950A25 /* WhyiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F769D3F72242CFA800950A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F769D3F92242CFA800950A25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F769D3FC2242CFA800950A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F769D3FE2242CFAA00950A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F769D4012242CFAA00950A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F769D4032242CFAA00950A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F769D40F2242D09800950A25 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F769D4112242D14800950A25 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		F769D4132242D15F00950A25 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		F769D4172242D1E500950A25 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F769D4192242D6FA00950A25 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,64 @@
 		F769D3F62242CFA800950A25 /* WhyiOS */ = {
 			isa = PBXGroup;
 			children = (
-				F769D3F72242CFA800950A25 /* AppDelegate.swift */,
-				F769D3F92242CFA800950A25 /* ViewController.swift */,
-				F769D3FB2242CFA800950A25 /* Main.storyboard */,
-				F769D3FE2242CFAA00950A25 /* Assets.xcassets */,
-				F769D4002242CFAA00950A25 /* LaunchScreen.storyboard */,
-				F769D4032242CFAA00950A25 /* Info.plist */,
+				F769D40E2242D03400950A25 /* Models */,
+				F769D40B2242D02500950A25 /* Controllers */,
+				F769D4092242CFC800950A25 /* Storyboards */,
+				F769D40A2242CFCD00950A25 /* Resources */,
 			);
 			path = WhyiOS;
+			sourceTree = "<group>";
+		};
+		F769D4092242CFC800950A25 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F769D4172242D1E500950A25 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F769D40A2242CFCD00950A25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F769D4192242D6FA00950A25 /* LaunchScreen.storyboard */,
+				F769D3F72242CFA800950A25 /* AppDelegate.swift */,
+				F769D3FE2242CFAA00950A25 /* Assets.xcassets */,
+				F769D4032242CFAA00950A25 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F769D40B2242D02500950A25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F769D40D2242D03100950A25 /* ModelControllers */,
+				F769D40C2242D02A00950A25 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F769D40C2242D02A00950A25 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F769D4132242D15F00950A25 /* PostListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F769D40D2242D03100950A25 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F769D4112242D14800950A25 /* PostController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		F769D40E2242D03400950A25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F769D40F2242D09800950A25 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F769D4022242CFAA00950A25 /* LaunchScreen.storyboard in Resources */,
+				F769D4182242D1E500950A25 /* Main.storyboard in Resources */,
+				F769D41A2242D6FA00950A25 /* LaunchScreen.storyboard in Resources */,
 				F769D3FF2242CFAA00950A25 /* Assets.xcassets in Resources */,
-				F769D3FD2242CFA800950A25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F769D3FA2242CFA800950A25 /* ViewController.swift in Sources */,
 				F769D3F82242CFA800950A25 /* AppDelegate.swift in Sources */,
+				F769D4102242D09800950A25 /* Post.swift in Sources */,
+				F769D4122242D14800950A25 /* PostController.swift in Sources */,
+				F769D4142242D15F00950A25 /* PostListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F769D3FB2242CFA800950A25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F769D3FC2242CFA800950A25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F769D4002242CFAA00950A25 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F769D4012242CFAA00950A25 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F769D4042242CFAA00950A25 /* Debug */ = {
@@ -284,7 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = WhyiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyiOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = WhyiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyiOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
