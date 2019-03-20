@@ -8,14 +8,9 @@
 
 import UIKit
 
-protocol PostTableViewCellDelegate: class {
-    func addPostButtonTapped(cell: PostTableViewCell)
-}
-
 class PostTableViewCell: UITableViewCell {
     
     //Landing pad and delegate stuffs.
-    weak var delegate: PostTableViewCellDelegate?
     //We also need a place for the data to land so that the cell can update itself.
     var post: Post? {
         didSet {

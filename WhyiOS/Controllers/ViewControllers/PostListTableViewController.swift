@@ -27,7 +27,6 @@ class PostListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as? PostTableViewCell
         let post = PostController.shared.posts[indexPath.row]
-        cell?.delegate = self
         cell?.post = post
         // Configure the cell...
 
@@ -81,11 +80,5 @@ class PostListTableViewController: UITableViewController {
     
     @IBAction func refreshButtonTapped(_ sender: UIBarButtonItem) {
         refreshData()
-    }
-}
-
-extension PostListTableViewController: PostTableViewCellDelegate {
-    func addPostButtonTapped(cell: PostTableViewCell) {
-        presentAlertController()
     }
 }
