@@ -14,6 +14,7 @@
 		F769D4142242D15F00950A25 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769D4132242D15F00950A25 /* PostListTableViewController.swift */; };
 		F769D4182242D1E500950A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769D4172242D1E500950A25 /* Main.storyboard */; };
 		F769D41A2242D6FA00950A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769D4192242D6FA00950A25 /* LaunchScreen.storyboard */; };
+		F7B8E0512242DB460060B053 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B8E0502242DB460060B053 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F769D4132242D15F00950A25 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		F769D4172242D1E500950A25 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F769D4192242D6FA00950A25 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7B8E0502242DB460060B053 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F769D4112242D14800950A25 /* PostController.swift */,
+				F7B8E0502242DB460060B053 /* PostTableViewCell.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				F769D3F82242CFA800950A25 /* AppDelegate.swift in Sources */,
 				F769D4102242D09800950A25 /* Post.swift in Sources */,
+				F7B8E0512242DB460060B053 /* PostTableViewCell.swift in Sources */,
 				F769D4122242D14800950A25 /* PostController.swift in Sources */,
 				F769D4142242D15F00950A25 /* PostListTableViewController.swift in Sources */,
 			);
